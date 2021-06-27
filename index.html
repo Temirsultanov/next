@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next - digital team from Dagestan</title>
+</head>
+<body>
+    <div class="logo logo-green">    
+        <h1 class="pink"><span>Next</span> --></h1>
+        <h1 class="dark"><span>Next</span> --></h1>
+        <h1 class="yellow"><span>Next</span> --></h1>
+    </div>
+    <div class="rect"></div>
+    <div class="members-wrap members-wrap-stop">
+        <div class="members">
+            <span>digital</span>
+            <span>coding</span>
+            <span>design</span>
+            <span>marketing</span>
+            <span>digital</span>
+        </div>
+    </div>
+    <script>
+        let logo = document.querySelector(".logo");
+        setTimeout(() => {
+            logo.classList.remove('logo-green');
+        }, 1100);
+        setTimeout(() => {
+            logo.classList.add('logo-hidden');
+        }, 2100);
+        setTimeout(() => {
+            document.querySelector(".members-wrap").classList.remove('members-wrap-stop');
+        }, 3000);
+    </script>
+</body>
+</html>
